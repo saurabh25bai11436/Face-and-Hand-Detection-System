@@ -108,3 +108,48 @@ The notebook includes automatic dependency installation cells:
 | PINKY_PIP | 18 | Pinky PIP joint |
 | PINKY_DIP | 19 | Pinky DIP joint |
 | PINKY_TIP | 20 | Pinky tip |
+
+
+
+# Configuration Parameters
+
+| Parameter | Default Value | Description |
+|-----------|---------------|-------------|
+| `min_detection_confidence` | 0.5 | Minimum confidence threshold for detection |
+| `min_tracking_confidence` | 0.5 | Minimum confidence threshold for tracking |
+| Frame Size | 800x600 | Resized frame dimensions |
+| FPS Display Position | (10, 70) | Top-left corner of frame |
+| Face Landmark Color | (255, 0, 255) | Magenta color for landmarks |
+| Face Connection Color | (0, 255, 255) | Cyan color for connections |
+| Hand Connection Default | Default | MediaPipe default colors |
+
+
+
+# Known Issues & Solutions
+
+## Protobuf Version Conflict
+
+MediaPipe requires protobuf 4.25.9, which may conflict with other packages like `opentelemetry-proto`, `grpcio-status`, and `grain`.
+
+**Solution:** The installation output shows these warnings but the functionality remains unaffected. These are compatibility warnings, not critical errors.
+
+---
+
+## Colab Camera Access
+
+The JavaScript bridge requires explicit browser permission for camera access.
+
+**Solution:** When prompted, click "Allow" to grant camera permissions. If camera doesn't initialize, refresh the Colab runtime.
+
+---
+
+## Video Capture Not Opening
+
+If `cv2.VideoCapture()` fails to open the camera:
+
+**Solution:**
+
+- Ensure no other application is using the camera
+- Try changing the camera index (`0` to `1` for external cameras)
+- Verify camera permissions in your operating system
+```
