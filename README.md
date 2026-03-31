@@ -10,9 +10,9 @@ This project provides an intelligent, utility-based computer vision agent design
 
 This system is architected to explicitly demonstrate the foundational theories of Artificial Intelligence and Computer Vision:
 
-- **Knowledge Representation: Facial and hand topologies are not merely pixels; they are modeled as structured landmark maps (meshes) representing fixed geometric relationships of the human anatomy.
+- Knowledge Representation: Facial and hand topologies are not merely pixels; they are modeled as structured landmark maps (meshes) representing fixed geometric relationships of the human anatomy.
 
-- **Intelligent Perception: The AI operates as a perceiving agent, utilizing deep learning-based holistic models to perform real-time constraint satisfaction, ensuring that detected landmarks align with anatomical constraints even under motion.
+- Intelligent Perception: The AI operates as a perceiving agent, utilizing deep learning-based holistic models to perform real-time constraint satisfaction, ensuring that detected landmarks align with anatomical constraints even under motion.
 
 
 ## Features
