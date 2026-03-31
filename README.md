@@ -5,6 +5,16 @@ A real-time facial and hand landmark detection system using MediaPipe's holistic
 ## Overview
 
 This project provides an intelligent, utility-based computer vision agent designed to track and map facial and hand landmarks in real-time. Developed as a robust implementation of modern AI frameworks, it bridges the gap between high-level vision models (MediaPipe) and real-time processing paradigms (OpenCV) to demonstrate spatial reasoning and human-computer interaction.
+
+## Core AI Concepts
+
+This system is architected to explicitly demonstrate the foundational theories of Artificial Intelligence and Computer Vision:
+
+- **Knowledge Representation: Facial and hand topologies are not merely pixels; they are modeled as structured landmark maps (meshes) representing fixed geometric relationships of the human anatomy.
+
+- **Intelligent Perception: The AI operates as a perceiving agent, utilizing deep learning-based holistic models to perform real-time constraint satisfaction, ensuring that detected landmarks align with anatomical constraints even under motion.
+
+
 ## Features
 
 - **Holistic Detection**: Simultaneous detection of face, left hand, and right hand landmarks in real-time
