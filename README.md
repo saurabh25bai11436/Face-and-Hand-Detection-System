@@ -71,3 +71,6 @@ The project adheres to a modular design for high code quality:
 # Install required packages
 pip install opencv-python
 pip install mediapipe==0.10.14
+
+## Google Colab
+The notebook includes automatic dependency installation cells:
