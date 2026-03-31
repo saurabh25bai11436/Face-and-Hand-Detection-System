@@ -4,8 +4,7 @@ A real-time facial and hand landmark detection system using MediaPipe's holistic
 
 ## Overview
 
-This project leverages Google MediaPipe's holistic solution to simultaneously detect and visualize facial landmarks (468 points), hand landmarks (21 points per hand), and pose landmarks in real-time video streams. The system provides two operational modes: standard webcam capture and a browser-based JavaScript bridge for Colab environments, making it versatile for various deployment scenarios.
-
+This project provides an intelligent, utility-based computer vision agent designed to track and map facial and hand landmarks in real-time. Developed as a robust implementation of modern AI frameworks, it bridges the gap between high-level vision models (MediaPipe) and real-time processing paradigms (OpenCV) to demonstrate spatial reasoning and human-computer interaction.
 ## Features
 
 - **Holistic Detection**: Simultaneous detection of face, left hand, and right hand landmarks in real-time
