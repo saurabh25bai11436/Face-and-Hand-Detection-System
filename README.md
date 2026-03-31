@@ -39,4 +39,35 @@ This system is architected to explicitly demonstrate the foundational theories o
 
 **FPS Calculation**: Real-time frame rate calculation using time tracking between consecutive frames to monitor system performance.
 
+## System Architecture: How It Works
+The project adheres to a modular design for high code quality:
 
+- ### The Engine (MediaPipe Holistic): The brain of the system. It processes incoming RGB frames to identify 468+ facial landmarks and 21 landmark points per hand with high confidence scores.
+
+- ### The Processor (OpenCV Integration): Manages the vision pipeline, including frame capture from hardware, color-space conversion (BGR to RGB), and real-time rendering of the resulting mesh.
+
+- ### Real-Time Feedback (FPS Logic): A performance-monitoring layer that calculates and displays frames per second (FPS), ensuring the agent meets the requirements for real-time interaction.
+
+  
+---
+
+## Technologies Used
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **MediaPipe** | 0.10.14 | Holistic landmark detection model |
+| **OpenCV** | 4.13.0+ | Video capture, image processing, and display |
+| **NumPy** | Latest | Image array manipulation |
+| **IPython** | Latest | Interactive notebook display |
+| **JavaScript** | ES6 | Browser-based camera bridge for Colab |
+
+---
+
+## Installation
+
+### Local Environment
+
+```bash
+# Install required packages
+pip install opencv-python
+pip install mediapipe==0.10.14
