@@ -153,3 +153,71 @@ If `cv2.VideoCapture()` fails to open the camera:
 - Try changing the camera index (`0` to `1` for external cameras)
 - Verify camera permissions in your operating system
 
+# Troubleshooting
+
+| Issue | Possible Cause | Solution |
+|-------|---------------|----------|
+| No video display | Camera not accessible | Check camera permissions and connections |
+| Low FPS | High resolution processing | Reduce frame size in resize() function |
+| No landmarks detected | Poor lighting conditions | Improve lighting or adjust confidence thresholds |
+| Colab mode fails | JavaScript blocked | Allow camera permissions in browser |
+| Installation errors | Package conflicts | Use virtual environment or restart runtime |
+
+---
+
+# Future Enhancements
+
+- [ ] Add pose detection to utilize full holistic model capabilities
+- [ ] Implement gesture recognition based on hand landmark positions
+- [ ] Add recording functionality for detected sequences
+- [ ] Export landmark coordinates to CSV for analysis
+- [ ] Add distance calculations between specific landmarks
+- [ ] Implement hand tracking for sign language recognition
+- [ ] Add facial expression detection using landmark relationships
+- [ ] Create real-time filtering and smoothing for jitter reduction
+- [ ] Add multi-person detection support
+- [ ] Implement landmark-based game controls
+
+---
+
+# Use Cases
+
+- **Human-Computer Interaction**: Gesture-based control systems for presentations, gaming, and accessibility
+- **Sign Language Recognition**: Track hand positions and movements for sign language translation
+- **Facial Expression Analysis**: Monitor facial landmarks for emotion detection and user experience research
+- **AR/VR Applications**: Track user's face and hands for virtual interactions and avatar control
+- **Biometric Research**: Collect landmark data for analysis and machine learning training
+- **Fitness Applications**: Track body and hand positions for exercise form correction
+- **Virtual Try-on**: Use hand and face tracking for virtual jewelry and makeup applications
+- **Medical Assessment**: Monitor facial expressions and hand movements for neurological assessments
+
+# Performance Optimization Tips
+
+1. **Reduce Frame Size**: Modify the resize dimensions to improve FPS
+
+   ```bash
+   frame = cv2.resize(frame, (640, 480))  # Lower resolution
+   ```
+2. **Adjust Confidence Thresholds**: Lower thresholds for better detection in poor lighting
+   
+   holistic_model = mp_holistic.Holistic(
+    min_detection_confidence=0.3,
+    min_tracking_confidence=0.3
+)
+   
+3. **Use GPU Acceleration**: For Colab, enable GPU runtime for faster processing
+
+   Runtime → Change runtime type → Hardware accelerator → GPU
+
+4. **Skip Frames**: Process every nth frame for smoother display
+
+ ```bash
+frame_count = 0
+if frame_count % 2 == 0:
+    results = holistic_model.process(image)
+frame_count += 1
+```
+
+# Author
+## Saurabh Ranjan
+25BAI11436
