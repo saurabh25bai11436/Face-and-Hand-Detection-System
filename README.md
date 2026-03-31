@@ -152,4 +152,4 @@ If `cv2.VideoCapture()` fails to open the camera:
 - Ensure no other application is using the camera
 - Try changing the camera index (`0` to `1` for external cameras)
 - Verify camera permissions in your operating system
-```
+
