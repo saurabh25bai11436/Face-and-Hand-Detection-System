@@ -80,3 +80,31 @@ The notebook includes automatic dependency installation cells:
 !pip install opencv-python
 !pip install mediapipe==0.10.14
 ```
+
+# Landmark Indices Reference
+
+## Hand Landmarks (21 points)
+
+| Landmark | Index | Description |
+|----------|-------|-------------|
+| WRIST | 0 | Wrist joint |
+| THUMB_CMC | 1 | Thumb carpometacarpal joint |
+| THUMB_MCP | 2 | Thumb metacarpophalangeal joint |
+| THUMB_IP | 3 | Thumb interphalangeal joint |
+| THUMB_TIP | 4 | Thumb tip |
+| INDEX_FINGER_MCP | 5 | Index finger MCP joint |
+| INDEX_FINGER_PIP | 6 | Index finger PIP joint |
+| INDEX_FINGER_DIP | 7 | Index finger DIP joint |
+| INDEX_FINGER_TIP | 8 | Index finger tip |
+| MIDDLE_FINGER_MCP | 9 | Middle finger MCP joint |
+| MIDDLE_FINGER_PIP | 10 | Middle finger PIP joint |
+| MIDDLE_FINGER_DIP | 11 | Middle finger DIP joint |
+| MIDDLE_FINGER_TIP | 12 | Middle finger tip |
+| RING_FINGER_MCP | 13 | Ring finger MCP joint |
+| RING_FINGER_PIP | 14 | Ring finger PIP joint |
+| RING_FINGER_DIP | 15 | Ring finger DIP joint |
+| RING_FINGER_TIP | 16 | Ring finger tip |
+| PINKY_MCP | 17 | Pinky MCP joint |
+| PINKY_PIP | 18 | Pinky PIP joint |
+| PINKY_DIP | 19 | Pinky DIP joint |
+| PINKY_TIP | 20 | Pinky tip |
