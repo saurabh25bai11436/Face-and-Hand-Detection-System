@@ -75,3 +75,8 @@ pip install mediapipe==0.10.14
 
 ## Google Colab
 The notebook includes automatic dependency installation cells:
+
+```bash
+!pip install opencv-python
+!pip install mediapipe==0.10.14
+```
